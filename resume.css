@@ -1,0 +1,220 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: "Aptos Serif", Georgia, serif;
+    background-color: #e9ddf5;
+    color: #30283a;
+    line-height: 1.5;
+}
+
+.resume {
+    max-width: 850px;
+    margin: auto;
+    background-color: #fffaff;
+    padding: 35px 45px;
+    border: 2px solid #c9b1dc;
+    box-shadow: 0 4px 15px rgba(90, 65, 110, 0.12);
+}
+
+
+/* ---------- HEADER ---------- */
+
+.header {
+    text-align: center;
+    background-color: #e1d1f0;
+    border: 1px solid #c5a9d8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #49345a;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.header p {
+    margin: 6px 0;
+    color: #5d4b69;
+    font-size: 13px;
+}
+
+.header a {
+    color: #694c7d;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+    margin-bottom: 18px;
+}
+
+.section-title {
+    color: #4b3659;
+    background-color: #eee4f7;
+    border-left: 5px solid #a982c2;
+    border-bottom: 1px solid #cdb8dc;
+    padding: 7px 10px;
+    margin-bottom: 9px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------- SUMMARY ---------- */
+
+.summary {
+    border: 1px solid #d5c3df;
+    background-color: #fcf8ff;
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills {
+    border: 1px solid #d5c3df;
+    background-color: #fcf8ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.skills p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.skills strong {
+    color: #584067;
+}
+
+
+/* ---------- EDUCATION ---------- */
+
+.education-item {
+    border-left: 3px solid #b99aca;
+    background-color: #faf6fd;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+
+.education-item h3 {
+    margin: 0;
+    color: #4b3659;
+    font-size: 13px;
+}
+
+.education-item p {
+    margin: 2px 0;
+    font-size: 11.5px;
+}
+
+.date {
+    float: right;
+    color: #6d5b77;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.project {
+    border: 1px solid #d5c3df;
+    background-color: #fdfaff;
+    padding: 10px 14px;
+    margin-bottom: 9px;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 0 0 5px 0;
+    color: #513d60;
+    font-size: 13px;
+}
+
+.project ul {
+    margin: 4px 0 0 18px;
+    padding: 0;
+}
+
+.project li {
+    margin-bottom: 3px;
+    font-size: 11.5px;
+}
+
+
+/* ---------- CERTIFICATIONS & ACHIEVEMENTS ---------- */
+
+.list-box {
+    border: 1px solid #d5c3df;
+    background-color: #fcf8ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.list-box ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+}
+
+.list-box li {
+    margin-bottom: 4px;
+    font-size: 11.5px;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #d5c3df;
+    color: #796a82;
+    font-size: 10px;
+}
+
+
+/* ---------- PRINT / PDF ---------- */
+
+@media print {
+
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .resume {
+        width: 100%;
+        max-width: none;
+        border: none;
+        box-shadow: none;
+        padding: 20px 30px;
+    }
+
+    .header,
+    .section-title,
+    .summary,
+    .skills,
+    .education-item,
+    .project,
+    .list-box {
+        break-inside: avoid;
+    }
+}
